@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>カウントダウンタイマー</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="timer-area">
+        <!-- 左：タイマー表示 -->
+        <p id="timer">
+          <span id="time-main">00:00</span>
+          <span id="time-ms">.00</span>
+        </p>
+
+        <!-- 右：分・秒操作 -->
+        <div class="time-controls">
+          <div class="control">
+            <button id="min-up">▲</button>
+            <span>分</span>
+            <button id="min-down">▼</button>
+          </div>
+
+          <div class="control">
+            <button id="sec-up">▲</button>
+            <span>秒</span>
+            <button id="sec-down">▼</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="start">START</button>
+        <button id="stop" class="btn-stop">STOP</button>
+        <button id="reset" class="btn-reset">RESET</button>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
